@@ -1,0 +1,94 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: darkblue;
+}
+
+.navbar-brand img {
+    height: 225px;
+    width: 400px;
+    padding: 0%;
+}
+
+.menu {
+    font-size: 30px;
+}
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    margin-bottom: 10%;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 2em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    font-style: italic;
+}
+
+.card {
+    margin-top: 30px;
+    width: 220px;
+    max-width: 200px;
+    height: 400px;
+    max-height: 350px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.content {
+    padding: 30px;
+    background-color: #E3FDFD;
+    text-align: center;
+}
+
+.card-img-top {
+    min-height: 100px;
+}
