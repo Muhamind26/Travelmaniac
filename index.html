@@ -2,862 +2,775 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelManiac!</title>
-  <link rel="shortcut icon" href="/Asset/travelmaniac.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelManiac!</title>
+    <link rel="shortcut icon" href="/Asset/travelmaniac.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="/Asset/travelmaniac.png" alt="TravelManiac"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="/Asset/travelmaniac.png" alt="TravelManiac"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse text-right menu" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html" id="aboutUs">About Us</a>
-          </li>
-        </ul>
-      </div>
+            <div class="collapse navbar-collapse text-right menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" id="aboutUs">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div class="container-fluid">
+        <div class="showcase">
+            <div class="video-container">
+                <video src="/Asset/mainVideo.mp4" autoplay muted loop></video>
+            </div>
+            <div class="text">
+                <h2>TravelManiac!</h2>
+                <h3>#NeverStopExploringTheWorld</h3>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- Banner -->
-  <div class="container-fluid">
-    <div class="showcase">
-      <div class="video-container">
-        <video src="/Asset/mainVideo.mp4" autoplay muted loop></video>
-      </div>
-      <div class="text">
-        <h2>TravelManiac!</h2>
-        <h3>#NeverStopExploringTheWorld</h3>
-      </div>
+    <!-- Alert -->
+    <div class="container mt-3">
+        <div class="alert alert-success" role="alert">
+            <marquee> New offer on this Year, check it out!</marquee>
+        </div>
     </div>
-  </div>
-  <!-- Alert -->
-  <div class="container mt-3">
-    <div class="alert alert-success" role="alert">
-      <marquee> New Packages on October 2021, check it out!</marquee>
+    <!-- Content -->
+
+    <div class="container-fluid d-grid">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Aceh/Bukit-Soeharto-Aceh.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceh</h5>
+                        <p class="card-text">Start form $1000</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAceh">View Detail</button>
+                            <div class="modal fade" id="modalAceh" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div id="modal-content" class="modal-content">
+                                        <div class="modal-header">Trip to Aceh</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Aceh/Bukit-Soeharto-Aceh.jpg" class="d-block w-100 rounded" alt="...">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Aceh/download.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Aceh/images.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Aceh</h3>
+                                                    <p>Aceh was first known as Aceh Darussalam (1511–1945). Upon its formation in 1956 it bore the name Aceh before being renamed to the Daerah Istimewa Aceh (Aceh Special Region; 1959–2001), Nanggroë Aceh
+                                                        Darussalam (2001–2009), and back to Aceh (2009–present). In the past it was also spelled as Acheh, Atjeh, and Achin.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Bandung/1961852.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bandung</h5>
+                        <p class="card-text">Start form $800</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBandung">View Detail</button>
+                            <div class="modal fade" id="modalBandung" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div id="modal-content" class="modal-content">
+                                        <div class="modal-header">Trip to Bandung</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Bandung/1961852.jpg" class="d-block w-100" alt="">
+                                                                <div class="carousel-caption d-none d-md-block"></div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Bandung/large-bandung-1-23d64054deeeadf0a41ff8e8e1a393d7.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block"></div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Bandung/Rumput-Sintetik-Alun-Alun-Bandung.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Bandung</h3>
+                                                    Bandung is the capital city of the Indonesian province of West Java. It has a population of 2,444,160 within its city limits, making it the fourth most populous city in Indonesia. Greater Bandung is the country's third-largest metropolitan area with over
+                                                    eight million inhabitants. Located 768 metres (2,520 feet) above sea level, the highest point in the North area with an altitude of 1,050 meters and the lowest in the South is 675 meters above sea level,
+                                                    approximately 140 kilometres (87 miles) southeast of Jakarta, Bandung has cooler year-round temperatures than most other Indonesian cities. The city lies on a river basin surrounded by volcanic mountains
+                                                    that provides a natural defense system, which was the primary reason for the Dutch East Indies government's plan to move the capital from Batavia (modern-day Jakarta) to Bandung.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/bali/bali.jpg" class="card-img-top rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali</h5>
+                        <p class="card-text">Start form $900</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBali">View Detail</button>
+                            <div class="modal fade" id="modalBali">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Bali</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/bali/bali.jpg" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block"></div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/bali/photo-1544644181-1484b3fdfc62.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block"></div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/bali/thumb-1920-541025.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Bali</h3>
+                                                    <p>Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably
+                                                        Nusa Penida, Nusa Lembongan, and Nusa Ceningan. The provincial capital, Denpasar, is the most populous city in the Lesser Sunda Islands and the second-largest, after Makassar, in Eastern Indonesia.
+                                                        The upland town of Ubud in Greater Denpasar is considered Bali's cultural centre. </p>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/bromo/Bromo.jpg" class="card-img-top img-fluid rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Bromo</h5>
+                        <p class="card-text">Start form $600</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBromo">View Detail</button>
+                            <div class="modal fade" id="modalBromo">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Mount Bromo</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/bromo/Bromo.jpg" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/bromo/shutterstock_765574879.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/bromo/wallpaperflare.com_wallpaper.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span> </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span> </button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Mount Bromo</h3>
+                                                    <p>Mount Bromo (Indonesian and Javanese: Gunung Bromo) is an active somma volcano and part of the Tengger mountains, in East Java, Indonesia. At 2,329 meters (7,641 feet) it is not the highest peak of the
+                                                        massif, but the most famous. The area is one of the most visited tourist destinations in East Java, and the volcano is included in the Bromo Tengger Semeru National Park. The name Bromo comes from
+                                                        the Javanese pronunciation of Brahma, the Hindu god of creation. Mount Bromo is located in the middle of a plain called "Sea of Sand" (Javanese: Segara Wedi or Indonesian: Lautan Pasir), a nature
+                                                        reserve that has been protected since 1919.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Dieng/bukit-sikunir-dieng.jpg" class="card-img-top rounded" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dieng Plateau</h5>
+                        <p class="card-text">Start form $500</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDieng">View Detail  </button>
+                            <div class="modal fade" id="modalDieng">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Dieng Plateau</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Dieng/5d5ccf87be8ba.jpg" class="d-block w-100" alt="...">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Dieng/bukit-sikunir-dieng.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Dieng/dieng.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Dieng Plateau</h3>
+                                                    <p>The Dieng Plateau is a marshy plateau that forms the floor of a caldera complex on the Dieng Volcanic Complex in Wonosobo and Banjarnegara, Central Java, Indonesia.[1] Referred to as "Dieng" by Indonesians,
+                                                        it sits at 2,000 metres (6,600 ft) above sea level, far from major population centres. The name "Dieng" comes from Dihyang which means "place of the ancestors or gods".</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Jakarta/1.jpg" class="card-img-top rounded" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Jakarta</h5>
+                        <p class="card-text">Start form $600</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJakarta">View Detail</button>
+                            <div class="modal fade" id="modalJakarta">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Jakarta</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Jakarta/1.jpg" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Jakarta/jakarta-city-cityscape-wallpaper-preview.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Jakarta/kota-tua-jakarta-banner.jpeg" class="d-block w-100 rounded" alt="">
+                                                            </div>
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Jakarta</h3>
+                                                    <p>Jakarta , officially the Special Capital Region of Jakarta (Indonesian: Daerah Khusus Ibukota Jakarta), is the largest city of Indonesia. Lying on the northwest coast of Java, the world's most populous
+                                                        island, Jakarta is the largest city in Southeast Asia and serves as the diplomatic capital of ASEAN. The city is the centre of the economy, culture, and politics of Indonesia. It has a province level
+                                                        status which has a population of 10,562,088 as of 2020. Although Jakarta extends over only 664.01 square kilometres (256.38 sq mi), and thus has the smallest area of any Indonesian province, its
+                                                        metropolitan area covers 9,957.08 square kilometres (3,844.45 sq mi), which includes the satellite cities Bogor, Depok, Tangerang, South Tangerang, and Bekasi, and has an estimated population of
+                                                        35 million as of 2021, making it the largest urban area in Indonesia and the second-largest in the world (after Tokyo). Jakarta ranks first among the Indonesian provinces in human development index.
+                                                        Jakarta's business opportunities, and its ability to offer a potentially higher standard of living than is available in other parts of the country, have attracted migrants from across the Indonesian
+                                                        archipelago, making it a melting pot of numerous cultures.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/labuan bajo/download.jpg" class="card-img-top rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Labuan Bajo</h5>
+                        <p class="card-text">Start form $1000</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLabuanBajo">View Detail</button>
+                            <div class="modal fade" id="modalLabuanBajo">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Labuan Bajo</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/labuan bajo/4632382.png" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/labuan bajo/download.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">>
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/labuan bajo/images.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Labuan Bajo</h3>
+                                                    <p>Labuan Bajo is a fishing town located at the western end of the large island of Flores in the Nusa Tenggara region of east Indonesia. It is the capital of the West Manggarai Regency (Kabupaten Manggarai
+                                                        Barat), one of the eight regencies which are the major administrative divisions of Flores.</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Lombok/download.jpg" class="card-img-top rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lombok</h5>
+                        <p class="card-text">Start form $900</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLombok">View Detail</button>
+                            <div class="modal fade" id="modalLombok">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Lombok</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Lombok/download (1).jpg" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Lombok/download.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Lombok/Pilih-Mana-Liburan-ke-Bali-atau-Lombok-2.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+                                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Lombok</h3>
+                                                    <p>Lombok is an island in West Nusa Tenggara province, Indonesia. It forms part of the chain of the Lesser Sunda Islands, with the Lombok Strait separating it from Bali to the west and the Alas Strait between
+                                                        it and Sumbawa to the east. It is roughly circular, with a "tail" (Sekotong Peninsula) to the southwest, about 70 kilometres (43 miles) across and a total area of about 4,738.65 square kilometres
+                                                        (1,829.60 square miles). The provincial capital and largest city on the island is Mataram.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Manado/1.jpg" class="card-img-top rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Manado</h5>
+                        <p class="card-text">Start form $900</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalManado">View Detail</button>
+                            <div class="modal fade" id="modalManado">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Manado</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Manado/1.jpg" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Manado/1_19438_02.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Manado/indonesia-bunaken-wet-morning.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span> </button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Manado</h3>
+                                                    <p>Manado is the capital city of the Indonesian province of North Sulawesi. It is the second largest city in Sulawesi after Makassar, with the 2020 Census giving a population of 451,916 distributed over
+                                                        a land area of 162.53 km2. The Manado metropolitan area has a population of 1.2 million as of 2018. The city is located adjacent to the Bay of Manado, and is surrounded by a mountainous area
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Yogyakarta/keratonyogyakartapng.png" class="card-img-top rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Yogyakarta</h5>
+                        <p class="card-text">Start form $500</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalYk">View Detail</button>
+                            <div class="modal fade" id="modalYk">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Yogyakarta</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset//Yogyakarta/images.jpg" class="d-block w-100 rounded" alt=" ">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset//Yogyakarta/keratonyogyakartapng.png" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Yogyakarta/tamansari-1-5fb2fe5a8ede48293724ae73.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Yogyakarta</h3>
+                                                    <p>Yogyakarta is the capital city of Special Region of Yogyakarta in Indonesia, in the south-central part of the island of Java. As the only Indonesian royal city still ruled by a monarchy, Yogyakarta is
+                                                        regarded as an important centre for classical Javanese fine arts and culture such as ballet, batik textiles, drama, literature, music, poetry, silversmithing, visual arts, and wayang puppetry. Renowned
+                                                        as a centre of Indonesian education, Yogyakarta is home to a large student population and dozens of schools and universities, including Gadjah Mada University, the country's largest institute of
+                                                        higher education and one of its most prestigious.
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Raja Ampat/1564172.jpg" class="card-img-top rounded" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Raja Ampat</h5>
+                        <p class="card-text">Start form $1500</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRa">View Detail</button>
+                            <div class="modal fade" id="modalRa">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Raja Ampat</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Raja Ampat/1564172.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Raja Ampat/images.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Raja Ampat/photo-1570789210967-2cac24afeb00.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span> </button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Raja Ampat</h3>
+                                                    <p>Raja Ampat, or the Four Kings, is an archipelago located off the northwest tip of Bird's Head Peninsula on the island of New Guinea, in Indonesia's West Papua province. It comprises over 1,500 small
+                                                        islands, cays, and shoals surrounding the four main islands of Misool, Salawati, Batanta, and Waigeo, and the smaller island of Kofiau. The Raja Ampat archipelago straddles the Equator and forms
+                                                        part of Coral Triangle which contains the richest marine biodiversity on earth.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <div class="card content">
+                    <img src="/Asset/Lampung/14474309_1672460076417158_989266435832283136_n.jpg" class="card-img-top rounded" alt=" ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lampung</h5>
+                        <p class="card-text">Start form $1000</p>
+                        <div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLampung"> View Detail</button>
+                            <div class="modal fade" id="modalLampung">
+                                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">Trip to Lampung</div>
+                                        <div class="modal-body">
+                                            <div class="container row">
+                                                <div class="container col-lg-5">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="/Asset/Lampung/14474309_1672460076417158_989266435832283136_n.jpg" class="d-block w-100" alt="">
+                                                                <div class="carousel-caption d-none d-md-block rounded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Lampung/26365fc69a0812abe9a6acc59df2e9ae_XL.jpg" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="/Asset/Lampung/suoh.png" class="d-block w-100 rounded" alt="">
+                                                                <div class="carousel-caption d-none d-md-block">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="container col-lg-5">
+                                                    <h3>Lampung</h3>
+                                                    <p>Lampung is a province of Indonesia. It is located on the southern tip of the island of Sumatra. It has a short border with the province of Bengkulu to the northwest, and a longer border with the province
+                                                        of South Sumatra to the north. It is the original home of the Lampung people, who speak their own language, and possess their own written script. Its capital is Bandar Lampung.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-  <!-- Content -->
-
-  <div class="container-fluid d-grid">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Aceh/Bukit-Soeharto-Aceh.jpg" class="card-img-top rounded" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Aceh</h5>
-            <p class="card-text">Start form $1000</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAceh">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalAceh" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
-                  <div id="modal-content" class="modal-content">
-                    <div class="modal-header">Trip to Aceh</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Aceh/Bukit-Soeharto-Aceh.jpg" class="d-block w-100 rounded" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Aceh/download.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Aceh/images.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
+    <!-- Footer -->
+    <div class="container-fluid pt-5 pb-5 ">
+        <div class="container">
+            <h2 class="display-3 text-center">Feedback</h2>
+            <p class="text-center">
+                Your feedback made us better
+            </p>
+            <div class="row pb-3">
+                <div class="col-md-6">
+                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Nama" />
+                    <input class="form-control form-control-lg mb-3" type="text" placeholder="Email" />
+                    <input class="form-control form-control-lg" type="text" placeholder="No. Phone" />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Bandung/1961852.jpg" class="card-img-top rounded" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bandung</h5>
-            <p class="card-text">Start form $800</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBandung">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalBandung" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-centered">
-                  <div id="modal-content" class="modal-content">
-                    <div class="modal-header">Trip to Bandung</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Bandung/1961852.jpg" class="d-block w-100" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Bandung/large-bandung-1-23d64054deeeadf0a41ff8e8e1a393d7.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Bandung/Rumput-Sintetik-Alun-Alun-Bandung.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
+                <div class="col-md-6">
+                    <textarea class="form-control form-control-lg" rows="5" placeholder="type your feedback here"></textarea>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/bali/bali.jpg" class="card-img-top rounded" alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Bali</h5>
-            <p class="card-text">Start form $900</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBali">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalBali">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Bali</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/bali/bali.jpg" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/bali/photo-1544644181-1484b3fdfc62.jpg" class="d-block w-100 rounded"
-                              alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/bali/thumb-1920-541025.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit"> Send</button>
+            <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/bromo/Bromo.jpg" class="card-img-top img-fluid rounded" alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Bromo</h5>
-            <p class="card-text">Start form $600</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBromo">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalBromo">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Bromo</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/bromo/Bromo.jpg" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/bromo/shutterstock_765574879.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/bromo/wallpaperflare.com_wallpaper.jpg" class="d-block w-100 rounded"
-                              alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
+                        <div class="modal-body">
+                            Your feedback already sent!
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Dieng/bukit-sikunir-dieng.jpg" class="card-img-top rounded" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Dieng</h5>
-            <p class="card-text">Start form $500</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDieng">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalDieng">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Dieng</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Dieng/5d5ccf87be8ba.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Dieng/bukit-sikunir-dieng.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Dieng/dieng.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Jakarta/1.jpg" class="card-img-top rounded" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Jakarta</h5>
-            <p class="card-text">Start form $600</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalJakarta">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalJakarta">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Jakarta</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Jakarta/1.jpg" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Jakarta/jakarta-city-cityscape-wallpaper-preview.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Jakarta/kota-tua-jakarta-banner.jpeg" class="d-block w-100 rounded" alt="">
-                          </div>
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Lorem, ipsum dolor.</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/labuan bajo/download.jpg" class="card-img-top rounded" alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Labuan Bajo</h5>
-            <p class="card-text">Start form $1000</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLabuanBajo">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalLabuanBajo">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Labuan Bajo</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/labuan bajo/4632382.png" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/labuan bajo/download.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/labuan bajo/images.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Lombok/download.jpg" class="card-img-top rounded" alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Lombok</h5>
-            <p class="card-text">Start form $900</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLombok">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalLombok">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Lombok</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Lombok/download (1).jpg" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Lombok/download.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Lombok/Pilih-Mana-Liburan-ke-Bali-atau-Lombok-2.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Manado/1.jpg" class="card-img-top rounded" alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Manado</h5>
-            <p class="card-text">Start form $900</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalManado">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalManado">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Manado</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Manado/1.jpg" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Manado/1_19438_02.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Manado/indonesia-bunaken-wet-morning.jpg" class="d-block w-100 rounded"
-                              alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Yogyakarta/keratonyogyakartapng.png" class="card-img-top rounded" alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Yogyakarta</h5>
-            <p class="card-text">Start form $500</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalYk">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalYk">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Yogyakarta</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset//Yogyakarta/images.jpg" class="d-block w-100 rounded" alt=" ">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset//Yogyakarta/keratonyogyakartapng.png" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Yogyakarta/tamansari-1-5fb2fe5a8ede48293724ae73.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Raja Ampat/1564172.jpg" class="card-img-top rounded" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Raja Ampat</h5>
-            <p class="card-text">Start form $1500</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRa">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalRa">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Raja Ampat</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Raja Ampat/1564172.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Raja Ampat/images.jpg" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Raja Ampat/photo-1570789210967-2cac24afeb00.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-2">
-        <div class="card content">
-          <img src="/Asset/Lampung/14474309_1672460076417158_989266435832283136_n.jpg" class="card-img-top rounded"
-            alt=" ">
-          <div class="card-body">
-            <h5 class="card-title">Lampung</h5>
-            <p class="card-text">Start form $1000</p>
-            <div>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLampung">
-                View Detail
-              </button>
-              <div class="modal fade" id="modalLampung">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">Trip to Lampung</div>
-                    <div class="modal-body">
-                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="/Asset/Lampung/14474309_1672460076417158_989266435832283136_n.jpg"
-                              class="d-block w-100" alt="">
-                            <div class="carousel-caption d-none d-md-block rounded">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Lampung/26365fc69a0812abe9a6acc59df2e9ae_XL.jpg"
-                              class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="/Asset/Lampung/suoh.png" class="d-block w-100 rounded" alt="">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Lorem, ipsum dolor.</h5>
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-  <!-- Footer -->
-  <div class="container-fluid pt-5 pb-5 ">
-    <div class="container">
-      <h2 class="display-3 text-center">Feedback</h2>
-      <p class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, porro.
-      </p>
-      <div class="row pb-3">
-        <div class="col-md-6">
-          <input class="form-control form-control-lg mb-3" type="text" placeholder="Nama" />
-          <input class="form-control form-control-lg mb-3" type="text" placeholder="Email" />
-          <input class="form-control form-control-lg" type="text" placeholder="No. Phone" />
-        </div>
-        <div class="col-md-6">
-          <textarea class="form-control form-control-lg" rows="5" placeholder="type your feedback here"></textarea>
-        </div>
-      </div>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit">
-        Send
-      </button>
-      <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="submitLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Your feedback already sent!
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
 
 
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
